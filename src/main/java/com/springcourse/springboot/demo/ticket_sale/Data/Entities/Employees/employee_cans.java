@@ -16,4 +16,35 @@ public class employee_cans {
 
     @ManyToMany(mappedBy = "employeeCans")
     private Set<employees> employeesSet;
+
+    public employee_cans() {
+    }
+
+    public employee_cans(String employee_can) {
+        this.employee_can = employee_can;
+    }
+
+    public Long getEmployee_can_id() {
+        return employee_can_id;
+    }
+
+    public void setEmployee_can_id(Long employee_can_id) {
+        this.employee_can_id = employee_can_id;
+    }
+
+    public String getEmployee_can() {
+        return employee_can;
+    }
+
+    public void setEmployee_can(String employee_can) {
+        this.employee_can = employee_can;
+    }
+
+    public Set<employees> getEmployeesSet() {
+        return employeesSet;
+    }
+
+    public void setEmployeesSet(Set<employees> employeesSet) {
+        this.employeesSet = employeesSet;
+    }
 }

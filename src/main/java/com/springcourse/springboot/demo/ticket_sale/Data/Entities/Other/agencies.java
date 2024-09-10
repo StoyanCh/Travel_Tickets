@@ -11,14 +11,23 @@ public class agencies {
     @Column(updatable = false, nullable = false)
     private Long agency_id;
 
-    @Column(length = 100, nullable = false)
+    @Column(length = 100, updatable = false, nullable = false, columnDefinition = "varchar(100)")
     private String agency_name;
 
-    @Column(length = 100, nullable = false)
+    @Column(length = 100, updatable = false, nullable = false, columnDefinition = "varchar(100)")
     private String agency_owner;
 
-    @Column(length = 100)
+    @Column(length = 100, updatable = false, nullable = false, columnDefinition = "varchar(100)")
     private String agency_fib;
+
+    public agencies() {
+    }
+
+    public agencies(String agency_name, String agency_owner, String agency_fib) {
+        this.agency_name = agency_name;
+        this.agency_owner = agency_owner;
+        this.agency_fib = agency_fib;
+    }
 
     public Long getAgency_id() {
         return agency_id;

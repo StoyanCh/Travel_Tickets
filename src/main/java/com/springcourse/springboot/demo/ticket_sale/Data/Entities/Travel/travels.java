@@ -40,8 +40,8 @@ public class travels {
 
     @Column(nullable = false, columnDefinition = "boolean")
     private Boolean available;
-
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "transport_type_id", referencedColumnName = "transport_type_id", nullable = false)
     private travel_types travelTypes;
+
 }

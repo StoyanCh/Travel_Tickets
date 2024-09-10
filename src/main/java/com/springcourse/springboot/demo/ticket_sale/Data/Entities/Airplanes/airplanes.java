@@ -48,5 +48,67 @@ public class airplanes {
         this.airplanes_driver = airplanes_driver;
     }
 
+    public String getVehicle_num() {
+        return vehicle_num;
+    }
 
+    public void setVehicle_num(String vehicle_num) {
+        this.vehicle_num = vehicle_num;
+    }
+
+    public agencies getAgency() {
+        return agency;
+    }
+
+    public void setAgency(agencies agency) {
+        this.agency = agency;
+    }
+
+    public String getAirplane_reh_num() {
+        return airplane_reh_num;
+    }
+
+    public void setAirplane_reh_num(String airplane_reh_num) {
+        this.airplane_reh_num = airplane_reh_num;
+    }
+
+    public airplane_types getAirplaneTypes() {
+        return airplaneTypes;
+    }
+
+    public void setAirplaneTypes(airplane_types airplaneTypes) {
+        this.airplaneTypes = airplaneTypes;
+    }
+
+    public Integer getAirplane_available_seats() {
+        return airplane_available_seats;
+    }
+
+    public void setAirplane_available_seats(Integer airplane_available_seats) {
+        this.airplane_available_seats = airplane_available_seats;
+    }
+
+    public Double getAirplane_average_speed() {
+        return airplane_average_speed;
+    }
+
+    public void setAirplane_average_speed(Double airplane_average_speed) {
+        this.airplane_average_speed = airplane_average_speed;
+    }
+
+    public String getSpeed_metrics() {
+        return speed_metrics;
+    }
+
+    public void setSpeed_metrics(String speed_metrics) {
+        this.speed_metrics = speed_metrics;
+    }
+
+    public employees getAirplanes_driver() {
+        return airplanes_driver;
+    }
+
+    public void setAirplanes_driver(employees airplanes_driver) {
+        this.airplanes_driver = airplanes_driver;
+    }
 }

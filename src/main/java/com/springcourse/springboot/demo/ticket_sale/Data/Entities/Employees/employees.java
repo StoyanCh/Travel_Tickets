@@ -60,4 +60,143 @@ public class employees {
             inverseJoinColumns = @JoinColumn(name = "employee_can_id")
     )
     private Set<employee_cans> employeeCans;
+
+    public employees() {
+    }
+
+    public employees(String employee_fname, String employee_sname, String employee_lname, String employee_egn, String employee_idcardnum, String employee_photo, String employee_username, String employee_password, String employee_phone_number, String employee_email, com.springcourse.springboot.demo.ticket_sale.Data.Entities.Employees.employee_positions employee_positions, agencies agency, workplaces workplace) {
+        this.employee_fname = employee_fname;
+        this.employee_sname = employee_sname;
+        this.employee_lname = employee_lname;
+        this.employee_egn = employee_egn;
+        this.employee_idcardnum = employee_idcardnum;
+        this.employee_photo = employee_photo;
+        this.employee_username = employee_username;
+        this.employee_password = employee_password;
+        this.employee_phone_number = employee_phone_number;
+        this.employee_email = employee_email;
+        this.employee_positions = employee_positions;
+        this.agency = agency;
+        this.workplace = workplace;
+    }
+
+    public Long getEmployee_id() {
+        return employee_id;
+    }
+
+    public void setEmployee_id(Long employee_id) {
+        this.employee_id = employee_id;
+    }
+
+    public String getEmployee_fname() {
+        return employee_fname;
+    }
+
+    public void setEmployee_fname(String employee_fname) {
+        this.employee_fname = employee_fname;
+    }
+
+    public String getEmployee_sname() {
+        return employee_sname;
+    }
+
+    public void setEmployee_sname(String employee_sname) {
+        this.employee_sname = employee_sname;
+    }
+
+    public String getEmployee_lname() {
+        return employee_lname;
+    }
+
+    public void setEmployee_lname(String employee_lname) {
+        this.employee_lname = employee_lname;
+    }
+
+    public String getEmployee_egn() {
+        return employee_egn;
+    }
+
+    public void setEmployee_egn(String employee_egn) {
+        this.employee_egn = employee_egn;
+    }
+
+    public String getEmployee_idcardnum() {
+        return employee_idcardnum;
+    }
+
+    public void setEmployee_idcardnum(String employee_idcardnum) {
+        this.employee_idcardnum = employee_idcardnum;
+    }
+
+    public String getEmployee_photo() {
+        return employee_photo;
+    }
+
+    public void setEmployee_photo(String employee_photo) {
+        this.employee_photo = employee_photo;
+    }
+
+    public String getEmployee_username() {
+        return employee_username;
+    }
+
+    public void setEmployee_username(String employee_username) {
+        this.employee_username = employee_username;
+    }
+
+    public String getEmployee_password() {
+        return employee_password;
+    }
+
+    public void setEmployee_password(String employee_password) {
+        this.employee_password = employee_password;
+    }
+
+    public String getEmployee_phone_number() {
+        return employee_phone_number;
+    }
+
+    public void setEmployee_phone_number(String employee_phone_number) {
+        this.employee_phone_number = employee_phone_number;
+    }
+
+    public String getEmployee_email() {
+        return employee_email;
+    }
+
+    public void setEmployee_email(String employee_email) {
+        this.employee_email = employee_email;
+    }
+
+    public com.springcourse.springboot.demo.ticket_sale.Data.Entities.Employees.employee_positions getEmployee_positions() {
+        return employee_positions;
+    }
+
+    public void setEmployee_positions(com.springcourse.springboot.demo.ticket_sale.Data.Entities.Employees.employee_positions employee_positions) {
+        this.employee_positions = employee_positions;
+    }
+
+    public agencies getAgency() {
+        return agency;
+    }
+
+    public void setAgency(agencies agency) {
+        this.agency = agency;
+    }
+
+    public workplaces getWorkplace() {
+        return workplace;
+    }
+
+    public void setWorkplace(workplaces workplace) {
+        this.workplace = workplace;
+    }
+
+    public Set<employee_cans> getEmployeeCans() {
+        return employeeCans;
+    }
+
+    public void setEmployeeCans(Set<employee_cans> employeeCans) {
+        this.employeeCans = employeeCans;
+    }
 }
