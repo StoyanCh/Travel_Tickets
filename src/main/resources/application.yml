@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
   address: 192.168.1.17
 
 spring:
@@ -7,9 +7,8 @@ spring:
     jwtSecret: s3cr37
     jwtExpirationMs: 36000000
 
-
-
   datasource:
+    # Production Database Configuration
     url: jdbc:postgresql://localhost:5432/Ticket_Sale
     username: postgres
     password: Kurama279
@@ -24,3 +23,19 @@ spring:
         format_sql: true
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+
+  datasource:
+    # Test Database Configuration
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
