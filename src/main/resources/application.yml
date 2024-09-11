@@ -1,9 +1,20 @@
+server:
+  port: 8081
+  address: 192.168.1.17
+
 spring:
+  app:
+    jwtSecret: s3cr37
+    jwtExpirationMs: 36000000
+
+
+
   datasource:
     url: jdbc:postgresql://localhost:5432/Ticket_Sale
     username: postgres
     password: Kurama279
     driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: none
